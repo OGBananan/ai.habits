@@ -8,7 +8,7 @@ part of 'base_object.dart';
 
 class BaseObjectAdapter extends TypeAdapter<BaseObject> {
   @override
-  final int typeId = 0;
+  final typeId = 0;
 
   @override
   BaseObject read(BinaryReader reader) {

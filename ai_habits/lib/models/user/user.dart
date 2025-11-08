@@ -1,5 +1,5 @@
 import 'package:ai_habits/models/base-object/base_object.dart';
-import 'package:hive/hive.dart';
+import 'package:hive_ce/hive.dart';
 
 part 'user.g.dart';
 

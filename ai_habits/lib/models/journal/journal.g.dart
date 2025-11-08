@@ -8,7 +8,7 @@ part of 'journal.dart';
 
 class JournalAdapter extends TypeAdapter<Journal> {
   @override
-  final int typeId = 2;
+  final typeId = 2;
 
   @override
   Journal read(BinaryReader reader) {
@@ -30,18 +30,18 @@ class JournalAdapter extends TypeAdapter<Journal> {
   void write(BinaryWriter writer, Journal obj) {
     writer
       ..writeByte(6)
-      ..writeByte(3)
-      ..write(obj.type)
-      ..writeByte(4)
-      ..write(obj.content)
-      ..writeByte(5)
-      ..write(obj.properties)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
       ..write(obj.createdAt)
       ..writeByte(2)
-      ..write(obj.updatedAt);
+      ..write(obj.updatedAt)
+      ..writeByte(3)
+      ..write(obj.type)
+      ..writeByte(4)
+      ..write(obj.content)
+      ..writeByte(5)
+      ..write(obj.properties);
   }
 
   @override
