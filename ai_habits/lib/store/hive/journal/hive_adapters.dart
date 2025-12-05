@@ -15,5 +15,6 @@ class HiveAdapters {
   static void register() {
     Hive.registerAdapter(JournalAdapter());
     Hive.registerAdapter(UserAdapter());
+    Hive.registerAdapter(HabitAdapter());
   }
 }
