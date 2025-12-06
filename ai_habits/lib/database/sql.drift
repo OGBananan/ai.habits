@@ -1,0 +1,7 @@
+-- .drift files can contain SQL that is analyzed at compile time.
+-- First, let's import the Dart tables so that we can reference them here.
+import 'tables.dart';
+
+-- Add custom SQL queries here as needed.
+-- Example:
+-- _getHabitsByRealm: SELECT * FROM habits WHERE realm_id = :realmId;
